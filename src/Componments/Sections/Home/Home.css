@@ -1,0 +1,17 @@
+* {
+        color: rgb(43, 43, 43);
+    }
+    
+    .ab-text {
+        font-size: 75px;
+        padding-bottom: 50px;
+    }
+    
+    .aboutMe {
+        text-align: center;
+        margin: 0 150px 0 150px;
+    }
+    #Me{
+        border-radius: 50%
+    }
+

@@ -1,13 +1,9 @@
-import React from "react";
-import Header from "./Componments/Header";
-import Footer from "./Componments/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
+import Direction from "./Componments/Direction";
 
 const App = () => 
     <div className="App">
-        <Header />
-    
-<Footer />
+        <Direction/>;
 </div>;
 
 
