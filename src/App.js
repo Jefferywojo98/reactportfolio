@@ -1,20 +1,14 @@
-import NavBar from './components/NavBar/NavBar';
-import About from './components/About/About';
-import Home from './components/Home/Home';
-import Skills from './components/Skills/Skills';
-import Contact from './components/Contact/Contact';
+import React from "react";
+import Header from "./Componments/Header";
+import Footer from "./Componments/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const App = () => 
+    <div className="App">
+        <Header />
+    
+<Footer />
+</div>;
 
-const App = () => {
-  return (
-<div className='App'>
-<NavBar />
-<Home />
-<About />
-<Skills />
-<Contact />
-</div>
-  )
-}
 
 export default App;
