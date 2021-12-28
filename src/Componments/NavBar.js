@@ -2,21 +2,6 @@ import React from 'react';
 import "./Direction.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const styling= {
-    card: {
-      display: "flex",
-      justifyContent: "center",
-      margin: "25px 0 25px 0",
-      fontSize: "20px",
-    },
-    Name: {
-      color: "rgb(43, 43, 43)",
-      fontSize: "50px",
-      textAlign: "center",
-      marginTop: "25px",
-    },
-  };
-
 function NavBar({ currentPage, handlePageChange }) {
   return (
     <div class="Navbar">
