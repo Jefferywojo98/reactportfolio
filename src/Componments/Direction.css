@@ -1,5 +1,6 @@
 * {
     background-color: rgb(238, 206, 178);
+    
 }
 
 .navBar {
@@ -9,4 +10,9 @@
 
 .nav-item {
     font-weight: bold;
+    list-style-type: none;
+    display: inline-flex ;
+
 }
+ a{
+ }

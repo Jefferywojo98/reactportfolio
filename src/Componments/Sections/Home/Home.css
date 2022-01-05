@@ -14,4 +14,14 @@
     #Me{
         border-radius: 50%
     }
+    @media (max-width:767px){
+        #Me{
+            height: 100px;
+            width: 100px;
+        }
+        .ab-text{
+            font-size: 30px;
+            margin: none
+        }
+    }
 

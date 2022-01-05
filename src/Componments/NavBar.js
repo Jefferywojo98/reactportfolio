@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar({ currentPage, handlePageChange }) {
   return (
-    <div class="Navbar">
+    <div class="Navbar text-center">
     <h1 class='mainTitle'>Jeffery Portfolio</h1>
       <li className="nav-item text-center">
         <a href="#home"onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}> Home</a>

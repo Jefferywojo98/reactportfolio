@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { validateEmail } from "./Helper";
 function Contact() {
     const [email, setEmail] = useState("");
-    const [FullName, setFullName] = useState("");
+    const [Name, setName] = useState("");
     const [Message, setMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
   
@@ -14,8 +14,8 @@ function Contact() {
   
       if (inputType === "email") {
         setEmail(inputValue);
-      } else if (inputType === "FullName") {
-        setFullName(inputValue);
+      } else if (inputType === "Name") {
+        setName(inputValue);
       } else {
         setMessage(inputValue);
       }
@@ -27,19 +27,19 @@ function Contact() {
         setErrorMessage("Email is invalid");
         return;
       }
-      if (!FullName) {
-        setErrorMessage("Name is required");
+      if (!Name) {
+        setErrorMessage("Your Name is required");
   
         return;
       }
       if (!Message) {
-        setErrorMessage("Message is required");
+        setErrorMessage("Your Message is required");
   
         return;
       }
-      alert(`${FullName}, thanks for send me a message!`);
-  
-      setFullName("");
+      alert(`${Name}, Thanks for send me a message! I'll be with you shortl
+      `);
+      setName("");
       setMessage("");
       setEmail("");
     };
@@ -53,8 +53,8 @@ function Contact() {
               <Form.Group className="text-center">
                 <Form.Label >Name:</Form.Label>
                 <Form.Control
-                  value={FullName}
-                  name="Full Name"
+                  value={Name}
+                  name="Name"
                   onChange={handleInputChange}
                   type="text"
                   placeholder="Full Name"
@@ -77,25 +77,18 @@ function Contact() {
                   name="message"
                   onChange={handleInputChange}
                   type="text"
-                  placeholder="Send me a message!"
+                  placeholder="How can I help you today!"
                   as="textarea"
-                  size="lg"
+                  size="md"
                   rows={3}
                 />
               </Form.Group>
             </Form>
-            <Button className="justify-content-center"
+            <Button className="button align-center"
               type="button"
-              onClick={handleFormSubmit}
-              variant="outline-light"
-            >
+              onClick={handleFormSubmit}>
               Submit
             </Button>
-            {errorMessage && (
-              <div>
-                <p className="errorText">{errorMessage}</p>
-              </div>
-            )}
           </div>
         </div>
       </div>
