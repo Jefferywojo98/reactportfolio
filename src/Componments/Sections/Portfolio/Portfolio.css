@@ -1,8 +1,11 @@
+
+img{
+    text-align: center;
+}
 @media (max-width:767px){
     .project1{
         height: 275px;
 
-        
     }
     .project2{
         height: 190px;
